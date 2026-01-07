@@ -1,0 +1,12 @@
+# common
+vllm==0.10.2
+datasets
+python_dateutil
+
+# common
+sympy
+antlr4-python3-runtime==4.7.2 # ! The version needs to be compatible with sympy.
+word2number
+Pebble
+timeout-decorator
+latex2sympy2==1.9.1

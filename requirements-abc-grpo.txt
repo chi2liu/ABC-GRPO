@@ -1,0 +1,7 @@
+git+https://github.com/chi2liu/trl.git@abc-grpo
+vllm==0.10.2
+deepspeed
+antlr4-python3-runtime
+latex2sympy2_extended
+math_verify
+tensorboardX

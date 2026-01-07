@@ -1,0 +1,71 @@
+# Model arguments
+model_name_or_path: Qwen/Qwen3-4B-Base
+model_revision: main
+torch_dtype: bfloat16
+attn_implementation: flash_attention_2
+
+# Data training arguments
+dataset_name: open-r1/DAPO-Math-17k-Processed
+dataset_prompt_column: prompt
+system_prompt: "Please reason step by step, and put your final answer within \\boxed{{}}."
+
+# ABC-GRPO trainer config
+importance_sampling_level: token
+#beta: 0.001
+bf16: true
+use_vllm: true
+vllm_mode: "colocate"
+vllm_gpu_memory_utilization: 0.4
+do_eval: false
+eval_strategy: "no"
+eval_steps: 1
+gradient_accumulation_steps: 16
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+hub_model_id: Qwen3-4B-Base-ABC-GRPO
+hub_strategy: every_save
+learning_rate: 1.0e-6
+log_level: info
+logging_first_step: true
+logging_steps: 1
+logging_strategy: steps
+lr_scheduler_type: cosine
+max_prompt_length: 1024
+max_completion_length: 3072
+max_steps: -1
+num_generations: 8
+num_train_epochs: 5
+output_dir: /mnt/models/Qwen3-4B-Base-ABC-GRPO
+overwrite_output_dir: true
+per_device_eval_batch_size: 4
+per_device_train_batch_size: 4
+push_to_hub: false
+report_to:
+- tensorboard
+reward_funcs:
+- accuracy
+reward_weights:
+- 1.0
+scale_rewards: true
+rl_type: "grpo"
+save_strategy: "epoch"
+save_steps: 100
+seed: 42
+warmup_ratio: 0.1
+save_total_limit: 20
+temperature: 1.0
+top_p: 1.0
+top_k: -1
+mask_truncated_completions: false
+
+# Token-level clipping parameters
+epsilon: 0.2  # Lower bound for token-level: 1-0.2 = 0.8
+epsilon_high: 0.2  # Upper bound for token-level: 1+0.2 = 1.2
+
+steps_per_generation: 64  # Partition rollout batch into mini-batches
+
+# Logging configuration
+log_completions: false  # Set to true to log sample completions
+
+resume_from_checkpoint: false
