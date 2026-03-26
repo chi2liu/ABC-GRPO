@@ -57,17 +57,17 @@ This design prevents unbounded gradient updates, particularly addressing the cri
 | **Base** | AIME24 | 3.4 | 6.7 | 10.0 | 13.3 | 13.3 | 16.7 | 30.0 |
 | GRPO | AIME24 | 8.4 | 16.7 | 20.0 | 26.7 | 26.7 | 30.0 | 30.0 |
 | **ABC-GRPO** | AIME24 | **9.8** | 10.0 | 20.0 | 26.7 | **36.7** | **36.7** | **36.7** |
-| *Gain* | | *+16.7%* | *-40.1%* | *-* | *-* | *+37.5%* | *+22.3%* | *+22.3%* |
+| *Gain* | | *+1.4* | *-6.7* | *-* | *-* | *+10.0* | *+6.7* | *+6.7* |
 | | | | | | | | | |
 | **Base** | AIME25 | 3.2 | 10.0 | 13.3 | 16.7 | 26.7 | 30.0 | 40.0 |
 | GRPO | AIME25 | 5.6 | 6.7 | 6.7 | 10.0 | 16.7 | 20.0 | 26.7 |
 | **ABC-GRPO** | AIME25 | **8.0** | **10.0** | **13.3** | **16.7** | **23.3** | **33.3** | **36.7** |
-| *Gain* | | *+42.9%* | *+49.3%* | *+98.5%* | *+67.0%* | *+39.5%* | *+66.5%* | *+37.5%* |
+| *Gain* | | *+2.4* | *+3.3* | *+6.6* | *+6.7* | *+6.6* | *+13.3* | *+10.0* |
 | | | | | | | | | |
 | **Base** | AMC23 | 24.5 | 40.0 | 57.5 | 65.0 | 75.0 | 82.5 | 90.0 |
 | GRPO | AMC23 | 38.5 | 45.0 | 52.5 | 67.5 | 82.5 | 90.0 | 92.5 |
 | **ABC-GRPO** | AMC23 | **44.2** | **60.0** | **65.0** | **75.0** | 80.0 | 87.5 | 92.5 |
-| *Gain* | | *+14.8%* | *+33.3%* | *+23.8%* | *+11.1%* | *-3.0%* | *-2.8%* | *-* |
+| *Gain* | | *+5.7* | *+15.0* | *+12.5* | *+7.5* | *-2.5* | *-2.5* | *-* |
 
 ### Qwen3-4B-Base
 
@@ -76,21 +76,21 @@ This design prevents unbounded gradient updates, particularly addressing the cri
 | **Base** | AIME24 | 8.1 | 16.7 | 23.3 | 23.3 | 36.7 | 40.0 | 50.0 |
 | GRPO | AIME24 | 20.3 | 23.3 | 23.3 | 33.3 | 33.3 | 36.7 | 43.3 |
 | **ABC-GRPO** | AIME24 | **25.9** | **30.0** | **30.0** | **36.7** | **50.0** | **56.7** | **66.7** |
-| *Gain* | | *+27.6%* | *+28.8%* | *+28.8%* | *+10.2%* | *+50.2%* | *+54.5%* | *+54.0%* |
+| *Gain* | | *+5.6* | *+6.7* | *+6.7* | *+3.4* | *+16.7* | *+20.0* | *+23.4* |
 | | | | | | | | | |
 | **Base** | AIME25 | 5.9 | 10.0 | 23.3 | 30.0 | 33.3 | 40.0 | 43.3 |
 | GRPO | AIME25 | 20.0 | 20.0 | 23.3 | 30.0 | 33.3 | 40.0 | 40.0 |
 | **ABC-GRPO** | AIME25 | **20.6** | **26.7** | **33.3** | **36.7** | **40.0** | **46.7** | **46.7** |
-| *Gain* | | *+3.0%* | *+33.5%* | *+42.9%* | *+22.3%* | *+20.1%* | *+16.8%* | *+16.8%* |
+| *Gain* | | *+0.6* | *+6.7* | *+10.0* | *+6.7* | *+6.7* | *+6.7* | *+6.7* |
 | | | | | | | | | |
 | **Base** | AMC23 | 37.9 | 62.5 | 80.0 | 82.5 | 85.0 | 87.5 | 90.0 |
 | GRPO | AMC23 | 63.1 | 67.5 | 75.0 | 80.0 | 87.5 | 92.5 | 95.0 |
 | **ABC-GRPO** | AMC23 | **68.4** | **82.5** | **90.0** | **92.5** | **95.0** | **95.0** | **97.5** |
-| *Gain* | | *+8.4%* | *+22.2%* | *+20.0%* | *+15.6%* | *+8.6%* | *+2.7%* | *+2.6%* |
+| *Gain* | | *+5.3* | *+15.0* | *+15.0* | *+12.5* | *+7.5* | *+2.5* | *+2.5* |
 
 ### Summary
 
-> ABC-GRPO achieves **+18.3% Avg@64** improvement for 1.7B and **+11.0%** for 4B on average across all benchmarks compared to GRPO. Critically, ABC-GRPO maintains **monotonic improvement** in Pass@64 while standard GRPO degrades, directly addressing the reasoning boundary limitation of current RLVR methods.
+> ABC-GRPO achieves **+3.2 Avg@64** improvement for 1.7B and **+3.8** for 4B on average across all benchmarks compared to GRPO. Critically, ABC-GRPO maintains **monotonic improvement** in Pass@64 while standard GRPO degrades, directly addressing the reasoning boundary limitation of current RLVR methods.
 
 ---
 
