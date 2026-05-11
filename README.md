@@ -115,7 +115,7 @@ This design prevents unbounded gradient updates, particularly addressing the cri
 
 ### Prerequisites
 
-ABC-GRPO is implemented as a branch of TRL (Transformer Reinforcement Learning) library based on version 0.25.1. The core ABC-GRPO algorithm implementation can be found in the [abc-grpo branch](https://github.com/chi2liu/trl/tree/abc-grpo) of the TRL repository.
+ABC-GRPO is implemented as a branch of TRL (Transformer Reinforcement Learning) library based on version 0.25.1. The core ABC-GRPO algorithm implementation can be found in the [abc-grpo branch](https://anonymous.4open.science/r/trl-FBDC/README.md) of the TRL repository.
 
 ### Environment Setup for ABC-GRPO
 
