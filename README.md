@@ -12,10 +12,6 @@
 
 ---
 
-## 📣 Latest News
-
-**[January 7, 2026]** 🔍 We propose **ABC-GRPO**, introducing 4 independent clipping boundaries instead of GRPO's 2 conditional boundaries, providing unconditional bounds across all four quadrants of the (r, Â) space. 📄 [Paper available on arXiv](https://arxiv.org/abs/2601.03895).
-
 ---
 
 ## 📌 Overview
@@ -289,31 +285,6 @@ ABC-GRPO/
 └── CLAUDE.md             # Developer documentation
 ```
 
----
-
-## 🤝 Citation
-
-If you find ABC-GRPO helpful, please cite our paper:
-
-```bibtex
-@misc{liu2026adaptiveboundaryclippinggrpoensuringbounded,
-      title={Adaptive-Boundary-Clipping GRPO: Ensuring Bounded Ratios for Stable and Generalizable Training},
-      author={Chi Liu and Xin Chen},
-      year={2026},
-      eprint={2601.03895},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2601.03895},
-}
-```
-
----
-
-## 📬 Contact
-
-For questions, feedback, or collaboration:
-- Chi Liu: chiliu@whu.edu.cn
-- Issues: [GitHub Issues](https://github.com/chi2liu/ABC-GRPO/issues)
 
 ---
 
