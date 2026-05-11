@@ -4,10 +4,6 @@
 
 <p align="center"><em>Ensuring Bounded Ratios for Stable and Generalizable Training</em></p>
 
-[![Paper](https://img.shields.io/badge/📄_Paper-arXiv-red.svg)](https://arxiv.org/abs/2601.03895)
-[![Code](https://img.shields.io/badge/💻_Code-GitHub-blue.svg)](https://github.com/chi2liu/trl/tree/abc-grpo)
-[![PDF](https://img.shields.io/badge/📑_PDF-Download-green.svg)](2601.03895v1.pdf)
-
 </div>
 
 ---
