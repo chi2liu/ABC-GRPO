@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>ABC-GRPO: Adaptive-Boundary-Clipping GRPO</h1>
+<h1>ABC-GRPO: All-Quadrant Bounded Clipping GRPO</h1>
 
 <p align="center"><em>Ensuring Bounded Ratios for Stable and Generalizable Training</em></p>
 
